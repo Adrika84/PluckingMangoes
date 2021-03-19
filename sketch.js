@@ -1,22 +1,22 @@
 
-const Engine = Matter.Engine;
-const World = Matter.World;
-const Bodies = Matter.Bodies;
-const Body = Matter.Body;
-const Render = Matter.Render;
-const Constraint = Matter.Constraint;
-var treeObj, stoneObj,groundObject, launcher;
-var mango1;
-var world,boy;
+  const Engine = Matter.Engine;
+  const World = Matter.World;
+  const Bodies = Matter.Bodies;
+  const Body = Matter.Body;
+  const Render = Matter.Render;
+  const Constraint = Matter.Constraint;
+  var treeObj, stoneObj,groundObject, launcher;
+  var mango1;
+  var world,boy;
 
-function preload(){
-	boy=loadImage("images/boy.png");
-  }
+  function preload(){
+    boy=loadImage("images/boy.png");
+    }
 
-function setup() {
-	createCanvas(1300, 600);
-	engine = Engine.create();
-	world = engine.world;
+  function setup() {
+    createCanvas(1300, 600);
+    engine = Engine.create();
+    world = engine.world;
 
 	mango1 = new mango(1100,100,30);
 	mango2 = new mango(1100, 200,30);
